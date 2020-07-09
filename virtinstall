@@ -1,0 +1,9 @@
+sudo virt-install \
+            --name opensuse \
+            --memory 2048 --cpu host \
+            --disk /var/lib/libvirt/images/opensuse.qcow2,format=qcow2,size=3,device=disk,bus=virtio \
+            --cdrom /var/lib/libvirt/images/opensuse.iso \
+            --os-type linux \
+            --virt-type kvm \
+            --graphics vnc,listen=0.0.0.0 --noautoconsole --accelerate \
+            --network network=default,model=virtio 

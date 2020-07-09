@@ -1,0 +1,7 @@
+/etc/libvirt/qemu
+
+
+/var/lib/libvirt/image
+
+
+virsh net-dhcp-leases default
