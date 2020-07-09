@@ -4,7 +4,7 @@ sudo virt-install \
             --disk /var/lib/libvirt/images/cent.qcow2,device=disk,bus=virtio \
             --disk /var/lib/libvirt/images/cent.iso,device=cdrom \
             --os-type linux \
-            --os-variant centos7.0 \ 
+            --os-variant centos7.0 \
             --virt-type kvm \
             --graphics vnc,listen=0.0.0.0 --noautoconsole \
             --network network=default,model=virtio \
